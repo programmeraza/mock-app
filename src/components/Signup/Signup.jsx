@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import "./Signup.scss"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FaCheckCircle } from "react-icons/fa"
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5"
 import { MdErrorOutline } from "react-icons/md"
+import toast from 'react-hot-toast'
 
-const Signup = ({ switchToLogin  }) => {
+const Signup = ({ switchToLogin, setIsAuth }) => {
+  const navigate = useNavigate()
+
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [repeatPassword, setRepeatPassword] = useState("")
@@ -20,12 +23,27 @@ const Signup = ({ switchToLogin  }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    if (!isEmailValid || !isPasswordValid || !isRepeatValid) {
-      alert("❌ Заполните поля правильно!")
+    if (!isEmailValid) {
+      toast.error("Введите корректный Email")
       return
     }
 
-    alert("✅ Регистрация успешна!")
+    if (!isPasswordValid) {
+      toast.error("Пароль минимум 6 символов")
+      return
+    }
+
+    if (!isRepeatValid) {
+      toast.error("Пароли не совпадают")
+      return
+    }
+
+    toast.success("Регистрация прошла успешно!")
+
+    setTimeout(() => {
+      setIsAuth(true)
+      navigate("/")
+    }, 1000)
   }
 
   return (
@@ -56,6 +74,12 @@ const Signup = ({ switchToLogin  }) => {
                     )}
                   </div>
                 </div>
+
+                {!isEmailValid && email.length > 0 && (
+                  <span style={{ color: 'red', fontSize: 12 }}>
+                    Введите корректный Email
+                  </span>
+                )}
               </div>
 
               {/* ===== PASSWORD ===== */}
@@ -76,6 +100,12 @@ const Signup = ({ switchToLogin  }) => {
                     {showPassword ? <IoEyeOutline /> : <IoEyeOffOutline />}
                   </div>
                 </div>
+
+                {!isPasswordValid && password.length > 0 && (
+                  <span style={{ color: 'red', fontSize: 12 }}>
+                    Минимум 6 символов
+                  </span>
+                )}
               </div>
 
               {/* ===== REPEAT PASSWORD ===== */}
@@ -96,6 +126,18 @@ const Signup = ({ switchToLogin  }) => {
                     {showRepeatPassword ? <IoEyeOutline /> : <IoEyeOffOutline />}
                   </div>
                 </div>
+
+                {repeatPassword.length > 0 && !isRepeatValid && (
+                  <span style={{ color: 'red', fontSize: 12 }}>
+                    Пароли не совпадают
+                  </span>
+                )}
+
+                {isRepeatValid && repeatPassword.length > 0 && (
+                  <span style={{ color: '#A175F0', fontSize: 12 }}>
+                    Пароли совпадают
+                  </span>
+                )}
               </div>
 
             </div>
@@ -145,4 +187,3 @@ const Signup = ({ switchToLogin  }) => {
 }
 
 export default Signup
-

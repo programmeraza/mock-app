@@ -74,6 +74,11 @@
         font-size: 20px;
     }
 
+    &__error {
+        font-size: 14px;
+        color: red;
+    }
+
     &__btn-next {
         display: flex;
         flex-direction: column;
