@@ -1,0 +1,33 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 12px 0 34px 0;
+    background-color: #fff;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+    }
+
+    &__card {
+        width: 100%;
+        max-width: 103px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        color: #5C5C5C;
+        p {
+            color: #5C5C5C;
+            font-size: 12px;
+        }
+    }
+
+    &__icon {
+        font-size: 24px;
+    }
+}
