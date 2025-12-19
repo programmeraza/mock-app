@@ -1,0 +1,54 @@
+.feed {
+    padding: 16px 0 25px 0;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 16px;
+        background-color: #fff;
+        border-radius: 24px;
+        transition: all .5s ease;
+
+        &:hover {
+            background-color: #a175f01a;
+            .feed__btn {
+                translate: 5px;
+            }
+        }
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__text-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 4px;
+
+        p {
+            font-size: 11px;
+            color: #A3A3A3;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #171717;
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        border: none;
+        outline: none;
+        transition: all .5s ease;
+    }
+}

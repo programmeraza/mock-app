@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Navigate.scss"
 import { RiHome9Line } from "react-icons/ri";
-import { SlNotebook } from "react-icons/sl";
+import { RiBookletLine } from "react-icons/ri";
 import { RiSettings3Line } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ const Navigate = () => {
             </Link>
             <Link className="nav__card">
               <div className="nav__icon">
-                <SlNotebook />
+                <RiBookletLine />
               </div>
               <p>Mock Test</p>
             </Link>

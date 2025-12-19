@@ -6,8 +6,14 @@
     box-sizing: border-box;
 }
 
+
+html {
+    background-color: #fff;
+}
+
 body {
-    background-color: #F0F1FF;
+    background: #F0F1FF;
+    background: linear-gradient(353deg, rgba(240, 241, 255, 1) 17%, rgba(240, 241, 255, 1) 41%, rgba(168, 119, 251, 1) 100%);
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
