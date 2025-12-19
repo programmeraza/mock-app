@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigate from '../components/Navigate/Navigate'
 
-const SettingsPage = () => {
+const TestPage = () => {
   return (
     <>
       <Navigate/>
@@ -9,4 +9,4 @@ const SettingsPage = () => {
   )
 }
 
-export default SettingsPage
+export default TestPage

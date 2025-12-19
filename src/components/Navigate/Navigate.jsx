@@ -13,19 +13,19 @@ const Navigate = () => {
       <div className="nav">
         <div className="container">
           <div className="nav__wrapper">
-            <Link className="nav__card">
+            <Link to={'/'} className="nav__card">
               <div className="nav__icon">
                 <RiHome9Line />
               </div>
               <p>Home</p>
             </Link>
-            <Link className="nav__card">
+            <Link to={'/test'} className="nav__card">
               <div className="nav__icon">
                 <RiBookletLine />
               </div>
               <p>Mock Test</p>
             </Link>
-            <Link className="nav__card">
+            <Link to={'/settings'} className="nav__card">
               <div className="nav__icon">
                 <RiSettings3Line />
               </div>
