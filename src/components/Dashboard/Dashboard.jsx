@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
 import ReactApexChart from "react-apexcharts"
 import ScoreCards from "../ScoreCards/ScoreCards"
-import "./Dashboard.scss"
 import Feedback from "../Feedback/Feedback"
 import Profile from "../Profile/Profile"
+import "./Dashboard.scss"
 
 const Dashboard = () => {
   const [scores, setScores] = useState(null)
