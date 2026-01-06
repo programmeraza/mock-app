@@ -1,0 +1,47 @@
+.practice {
+  padding: 24px;
+  background: linear-gradient(180deg, #e5dbff, #f3f0ff);
+  min-height: 100vh;
+
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  &__card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+
+    span {
+      font-size: 28px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  &__mock {
+    margin-top: 24px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    background: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

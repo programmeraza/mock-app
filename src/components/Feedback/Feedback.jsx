@@ -1,11 +1,12 @@
 import React from 'react'
 import "./Feedback.scss"
+import { Link } from 'react-router-dom'
 
 const Feedback = () => {
     return (
         <>
             <div className="feed">
-                <div className="feed__wrapper">
+                <Link to={'/mock'} className="feed__wrapper">
                     <div className="feed__flex">
                         <img src="./feedback.svg" alt="" />
                         <div className="feed__text-flex">
@@ -18,7 +19,7 @@ const Feedback = () => {
                             <path d="M7.5 15L12.5 10L7.5 5" stroke="#A4A4A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
-                </div>
+                </Link>
             </div>
         </>
     )

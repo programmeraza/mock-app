@@ -5,8 +5,6 @@ import { RiBookletLine } from "react-icons/ri";
 import { RiSettings3Line } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 
-
-
 const Navigate = () => {
   return (
     <>
@@ -19,7 +17,7 @@ const Navigate = () => {
               </div>
               <p>Home</p>
             </Link>
-            <Link to={'/test'} className="nav__card">
+            <Link to={'/tests'} className="nav__card">
               <div className="nav__icon">
                 <RiBookletLine />
               </div>

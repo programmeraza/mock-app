@@ -1,0 +1,25 @@
+.mock-step {
+  padding: 24px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    margin: 32px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  &__btn {
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    background: #a175f0;
+    color: #fff;
+    cursor: pointer;
+  }
+}
