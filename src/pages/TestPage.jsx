@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
-import PracticeBlock from "../components/PracticeBlock/PracticeBlock";
 import { tests } from "../data/tests";
+import PracticeBlock from "../components/PracticeBlock/PracticeBlock";
+import Nav from "../components/Navigate/Navigate";
 
 const TestPage = () => {
   const { type } = useParams();
@@ -18,17 +19,19 @@ const TestPage = () => {
   }
 
   return (
-    <div className="tests">
-      <h2>{type.toUpperCase()} TESTS</h2>
+    <>
+      <div className="tests">
+        <h2>{type.toUpperCase()} TESTS</h2>
 
-      {sectionTests.map((test) => (
-        <div key={test.id} className="tests__card">
-          <h4>{test.title}</h4>
-          <p>{test.duration}</p>
-          <button>Start</button>
-        </div>
-      ))}
-    </div>
+        {sectionTests.map((test) => (
+          <div key={test.id} className="tests__card">
+            <h4>{test.title}</h4>
+            <p>{test.duration}</p>
+            <button>Start</button>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
