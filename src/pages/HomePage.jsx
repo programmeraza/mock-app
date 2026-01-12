@@ -5,10 +5,8 @@ import Navigate from '../components/Navigate/Navigate'
 const HomePage = () => {
   return (
     <>
-      <div className="home">
         <Dashboard />
         <Navigate />
-      </div>
     </>
   )
 }

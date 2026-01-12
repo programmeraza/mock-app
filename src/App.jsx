@@ -14,7 +14,7 @@ function App() {
   const [isAuth, setIsAuth] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000);
+    const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
 

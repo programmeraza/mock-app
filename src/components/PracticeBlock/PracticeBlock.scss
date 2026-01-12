@@ -1,12 +1,15 @@
 .practice {
-  padding: 24px;
-  background: linear-gradient(180deg, #e5dbff, #f3f0ff);
-  min-height: 100vh;
+  padding-top: 60px;
+  background: #F0F1FF;
+  background: linear-gradient(353deg, rgba(240, 241, 255, 1) 17%, rgba(240, 241, 255, 1) 41%, rgba(168, 119, 251, 1) 100%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  height: 90dvh;
 
   &__title {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 24px;
+    color: #fff;
   }
 
   &__grid {
@@ -16,6 +19,10 @@
   }
 
   &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
     background: #fff;
     border-radius: 16px;
     padding: 24px;
@@ -23,10 +30,15 @@
     cursor: pointer;
     transition: 0.2s;
 
-    span {
-      font-size: 28px;
-      display: block;
-      margin-bottom: 8px;
+    img {
+      width: 64px;
+      height: 64px;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 700;
+      color: #333;
     }
 
     &:hover {
@@ -41,7 +53,10 @@
     border-radius: 14px;
     border: none;
     background: #fff;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 }
