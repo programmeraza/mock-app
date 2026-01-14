@@ -12,7 +12,7 @@ const Listening = () => {
             <div className="listening__wrapper">
               <Link to="/tests">
                 <button className="listening__btn">
-                  <img src="./arrow1.svg" alt="" />
+                  <img src="/arrow1.svg" alt="" />
                 </button>
               </Link>
               <h2 className="listening__title">Listening Test</h2>
@@ -26,14 +26,14 @@ const Listening = () => {
             <h4>Enhance concentration + audio skills</h4>
 
             <div className="listening__card">
-              <img src="./wallet.svg" alt="" className="listening__image" />
+              <img src="/wallet.svg" alt="" className="listening__image" />
               <div className="lestening__text">
                 <h3>40</h3>
                 <p>listening Questions</p>
               </div>
             </div>
             <div className="listening__card">
-              <img src="./clock.svg" alt="" className="listening__image" />
+              <img src="/clock.svg" alt="" className="listening__image" />
               <div className="lestening__text">
                 <h3>30 mins + 10 mins</h3>
                 <p>Audio duration + transfer time (simulated)</p>

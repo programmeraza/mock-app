@@ -29,7 +29,7 @@ const ListeningTest = () => {
           <div className="listening__wrapper">
             <Link to="/tests">
               <button className="listening__btn">
-                <img src="./arrow1.svg" alt="back" />
+                <img src="/arrow1.svg" alt="back" />
               </button>
             </Link>
             <h2 className="listening__title">Listening Test</h2>
@@ -91,7 +91,7 @@ const ListeningTest = () => {
             <div className="listening__test-bottom">
               <Link to={"/tests/listening/start"}>
                 <button className="listening__button-1">
-                  <img src="./arrow1.svg" alt="" />
+                  <img src="/arrow1.svg" alt="" />
                 </button>
               </Link>
               <Link to={"/tests/listening/start"} className="listening__btn2">
@@ -99,7 +99,7 @@ const ListeningTest = () => {
               </Link>
               <Link to={"/tests/listening/start"}>
                 <button className="listening__button-3">
-                  <img src="./arrow1.svg" alt="" />
+                  <img src="/arrow1.svg" alt="" />
                 </button>
               </Link>
             </div>

@@ -10,7 +10,7 @@ const Reading = () => {
             <div className="reading__wrapper">
               <Link to="/tests">
                 <button className="reading__btn">
-                  <img src="./arrow1.svg" alt="" />
+                  <img src="/arrow1.svg" alt="" />
                 </button>
               </Link>
               <h2 className="reading__title">Reading test</h2>
@@ -24,21 +24,21 @@ const Reading = () => {
             <h4>Improve comprehension skills</h4>
 
             <div className="reading__card">
-              <img src="./wallet.svg" alt="" className="reading__image" />
+              <img src="/wallet.svg" alt="" className="reading__image" />
               <div className="reading__text">
                 <h3>40</h3>
                 <p>reading Questions</p>
               </div>
             </div>
             <div className="reading__card">
-              <img src="./clock.svg" alt="" className="reading__image" />
+              <img src="/clock.svg" alt="" className="reading__image" />
               <div className="reading__text">
                 <h3>60 mins</h3>
                 <p>Total Duration</p>
               </div>
             </div>
             <div className="reading__card">
-              <img src="./wallet.svg" alt="" className="reading__image" />
+              <img src="/wallet.svg" alt="" className="reading__image" />
               <div className="reading__text">
                 <h3>True Band Estimate</h3>
                 <p>Based on official IELTS criteria</p>

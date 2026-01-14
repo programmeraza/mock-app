@@ -10,7 +10,7 @@ const Writing = () => {
                         <div className="writing__wrapper">
                             <Link to="/tests">
                                 <button className="writing__btn">
-                                    <img src="./arrow1.svg" alt="" />
+                                    <img src="/arrow1.svg" alt="" />
                                 </button>
                             </Link>
                             <h2 className="writing__title">Writing test</h2>
@@ -23,14 +23,14 @@ const Writing = () => {
                         <h1>IELTS Writing Test</h1>
                         <h4>Improve structure + idea development</h4>
                         <div className="writing__card">
-                            <img src="./wallet.svg" alt="" className="writing__image" />
+                            <img src="/wallet.svg" alt="" className="writing__image" />
                             <div className="writing__text">
                                 <h3>Task 1 & Task 2</h3>
                                 <p>Formal writing tasks</p>
                             </div>
                         </div>
                         <div className="writing__card">
-                            <img src="./clock.svg" alt="" className="writing__image" />
+                            <img src="/clock.svg" alt="" className="writing__image" />
                             <div className="writing__text">
                                 <h3>60 mins</h3>
                                 <p>Total Duration</p>

@@ -14,7 +14,7 @@ const ReadingTest = () => {
             <div className="reading__wrapper">
               <Link to="/tests">
                 <button className="reading__btn">
-                  <img src="./arrow1.svg" alt="back" />
+                  <img src="/arrow1.svg" alt="back" />
                 </button>
               </Link>
               <h2 className="reading__title">Reading Test</h2>
@@ -116,7 +116,7 @@ const ReadingTest = () => {
               <div className="reading__test-bottom">
                 <Link to="/tests/reading/start">
                   <button className="reading__button-1">
-                    <img src="./arrow1.svg" alt="previous" />
+                    <img src="/arrow1.svg" alt="previous" />
                   </button>
                 </Link>
 
@@ -131,7 +131,7 @@ const ReadingTest = () => {
 
                 <Link to="/tests/reading/start">
                   <button className="reading__button-3">
-                    <img src="./arrow1.svg" alt="next" />
+                    <img src="/arrow1.svg" alt="next" />
                   </button>
                 </Link>
               </div>

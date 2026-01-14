@@ -7,7 +7,7 @@ import Profile from '../components/Profile/Profile'
 const SettingsPage = () => {
   return (
     <>
-      <ProfileHeader/>
+      {/* <ProfileHeader/> */}
       <Profile/>
       <ProfileCard/>
       <Navigate/>
