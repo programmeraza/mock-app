@@ -3,7 +3,7 @@ import PracticeBlock from "../components/PracticeBlock/PracticeBlock";
 import Listening from "../components/Listening/Listening";
 import Reading from "../components/Reading/Reading";
 import Writing from "../components/Writing/Writing";
-// import Speaking from "../components/Speaking/Speaking";
+import Speaking from "../components/Speaking/Speaking";
 
 const TestPage = () => {
   const { type } = useParams();
@@ -25,7 +25,7 @@ const TestPage = () => {
       return <Writing />;
 
     case "speaking":
-      // return <Speaking />;
+      return <Speaking />;
 
     default:
       return <PracticeBlock />; 

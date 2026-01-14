@@ -8,7 +8,7 @@ import TestPage from "./pages/TestPage";
 import SettingsPage from "./pages/SettingsPage";
 import MockPage from "./pages/MockPage";
 import ErrorPage from "./pages/ErrorPage";
-import StartTestPage from "./pages/StartTestPage"; // ⬅️ НОВЫЙ
+import StartTestPage from "./pages/StartTestPage"; 
 
 function App() {
   const [loading, setLoading] = useState(true);

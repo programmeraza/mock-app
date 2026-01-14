@@ -1,28 +1,43 @@
 import { useState } from "react";
-import { mockSteps } from "../data/mockSteps";
 import MockStep from "../components/MockStep/MockStep";
 
+const testOrder = ["Listening", "Reading", "Writing", "Speaking"];
+
 const MockPage = () => {
-  const [stepIndex, setStepIndex] = useState(() => {
-    const saved = localStorage.getItem("mock-step");
-    return saved ? Number(saved) : 0;
-  });
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextStep = () => {
-    localStorage.removeItem(`time-${mockSteps[stepIndex].key}`);
-
-    if (stepIndex + 1 < mockSteps.length) {
-      localStorage.setItem("mock-step", stepIndex + 1);
-      setStepIndex(stepIndex + 1);
+  const handleNext = () => {
+    if (currentIndex + 1 < testOrder.length) {
+      setCurrentIndex(currentIndex + 1);
     } else {
-      localStorage.removeItem("mock-step");
-      alert("Mock Test Completed 🎉");
+      alert("All tests completed 🎉");
     }
   };
 
   return (
     <>
-      <MockStep step={mockSteps[stepIndex]} onNext={nextStep} />
+      <div>
+        <MockStep type={testOrder[currentIndex]} />
+
+        <button
+          onClick={handleNext}
+          style={{
+            position: "fixed",
+            bottom: "10px",
+            right: "16px",
+            padding: "0.75rem 1.5rem",
+            fontSize: "1rem",
+            backgroundColor: "#A175F0",
+            color: "#fff",
+            border: "none",
+            borderRadius: "6px",
+            cursor: "pointer",
+            alignSelf: "flex-end",
+          }}
+        >
+          Next
+        </button>
+      </div>
     </>
   );
 };

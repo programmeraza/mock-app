@@ -40,13 +40,13 @@ const PracticeBlock = () => {
               <p>Writing</p>
             </div>
 
-            <Link to={''}
+            <div
               onClick={() => navigate("/tests/speaking")}
               className="practice__card"
             >
               <img src="./speaking.svg" alt="" />
               <p>Speaking</p>
-            </Link>
+            </div>
           </div>
 
           <button className="practice__mock" onClick={() => navigate("/mock")}>
