@@ -21,10 +21,9 @@ const MockPage = () => {
   };
 
   return (
-    <MockStep
-      step={mockSteps[stepIndex]}
-      onNext={nextStep}
-    />
+    <>
+      <MockStep step={mockSteps[stepIndex]} onNext={nextStep} />
+    </>
   );
 };
 

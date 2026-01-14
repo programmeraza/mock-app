@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./PracticeBlock.scss";
 import Navigate from "../Navigate/Navigate";
 import Profile from "../Profile/Profile";
@@ -40,13 +40,13 @@ const PracticeBlock = () => {
               <p>Writing</p>
             </div>
 
-            <div
+            <Link to={''}
               onClick={() => navigate("/tests/speaking")}
               className="practice__card"
             >
               <img src="./speaking.svg" alt="" />
               <p>Speaking</p>
-            </div>
+            </Link>
           </div>
 
           <button className="practice__mock" onClick={() => navigate("/mock")}>

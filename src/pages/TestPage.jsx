@@ -1,38 +1,35 @@
 import { useParams } from "react-router-dom";
-import { tests } from "../data/tests";
 import PracticeBlock from "../components/PracticeBlock/PracticeBlock";
-import Nav from "../components/Navigate/Navigate";
+import Listening from "../components/Listening/Listening";
+import Reading from "../components/Reading/Reading";
+// import Writing from "../components/Writing/Writing";
+// import Speaking from "../components/Speaking/Speaking";
 
 const TestPage = () => {
   const { type } = useParams();
 
-  // 🔹 если тип не выбран — показываем выбор секции
+  // если /tests → показываем выбор
   if (!type) {
     return <PracticeBlock />;
   }
 
-  const sectionTests = tests[type];
+  // переключатель по type
+  switch (type) {
+    case "listening":
+      return <Listening />;
 
-  // 🔹 защита от неправильного URL
-  if (!sectionTests) {
-    return <PracticeBlock />;
+    case "reading":
+      return <Reading />;
+
+    case "writing":
+      // return <Writing />;
+
+    case "speaking":
+      // return <Speaking />;
+
+    default:
+      return <PracticeBlock />; 
   }
-
-  return (
-    <>
-      <div className="tests">
-        <h2>{type.toUpperCase()} TESTS</h2>
-
-        {sectionTests.map((test) => (
-          <div key={test.id} className="tests__card">
-            <h4>{test.title}</h4>
-            <p>{test.duration}</p>
-            <button>Start</button>
-          </div>
-        ))}
-      </div>
-    </>
-  );
 };
 
 export default TestPage;
