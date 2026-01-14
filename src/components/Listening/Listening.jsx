@@ -58,7 +58,7 @@ const Listening = () => {
             </ul>
           </div>
         </div>
-        <Link to="/tests/listening/listening-test">
+        <Link to="/tests/listening/start">
           <div className="listening__bottom">
             <button>Start listening test</button>
           </div>

@@ -89,15 +89,15 @@ const ListeningTest = () => {
               <input type="text" placeholder="Placeholder for 2 your answer" />
             </div>
             <div className="listening__test-bottom">
-              <Link to={"/tests/listening/listening-test"}>
+              <Link to={"/tests/listening/start"}>
                 <button className="listening__button-1">
                   <img src="./arrow1.svg" alt="" />
                 </button>
               </Link>
-              <Link to={"/tests/listening/listening-test"} className="listening__btn2">
+              <Link to={"/tests/listening/start"} className="listening__btn2">
                 <button className="listening__button-2">Confirm</button>
               </Link>
-              <Link to={"/tests/listening/listening-test"}>
+              <Link to={"/tests/listening/start"}>
                 <button className="listening__button-3">
                   <img src="./arrow1.svg" alt="" />
                 </button>

@@ -6,7 +6,7 @@ const Feedback = () => {
     return (
         <>
             <div className="feed">
-                <Link to={'/mock'} className="feed__wrapper">
+                <Link className="feed__wrapper">
                     <div className="feed__flex">
                         <img src="./feedback.svg" alt="" />
                         <div className="feed__text-flex">

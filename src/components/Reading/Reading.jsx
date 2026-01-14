@@ -62,7 +62,7 @@ const Reading = () => {
             </ul>
           </div>
         </div>
-        <Link to="/tests/reading/test">
+        <Link to="/tests/reading/start">
           <div className="reading__bottom">
             <button>Start reading test</button>
           </div>

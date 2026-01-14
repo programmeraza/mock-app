@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import PracticeBlock from "../components/PracticeBlock/PracticeBlock";
 import Listening from "../components/Listening/Listening";
 import Reading from "../components/Reading/Reading";
-// import Writing from "../components/Writing/Writing";
+import Writing from "../components/Writing/Writing";
 // import Speaking from "../components/Speaking/Speaking";
 
 const TestPage = () => {
@@ -22,7 +22,7 @@ const TestPage = () => {
       return <Reading />;
 
     case "writing":
-      // return <Writing />;
+      return <Writing />;
 
     case "speaking":
       // return <Speaking />;

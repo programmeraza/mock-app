@@ -8,6 +8,7 @@ import TestPage from "./pages/TestPage";
 import SettingsPage from "./pages/SettingsPage";
 import MockPage from "./pages/MockPage";
 import ErrorPage from "./pages/ErrorPage";
+import StartTestPage from "./pages/StartTestPage"; // ⬅️ НОВЫЙ
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,19 +28,23 @@ function App() {
         element={isAuth ? <HomePage /> : <Navigate to="/registr" replace />}
       />
 
-      {/* 🔹 страница выбора Listening / Reading / ... */}
+      {/* 🔹 tests */}
       <Route
         path="/tests"
         element={isAuth ? <TestPage /> : <Navigate to="/registr" replace />}
       />
 
-      {/* 🔹 конкретный тип */}
       <Route
         path="/tests/:type"
         element={isAuth ? <TestPage /> : <Navigate to="/registr" replace />}
       />
 
-      {/* 🔹 полный mock test */}
+      <Route
+        path="/tests/:type/start"
+        element={isAuth ? <StartTestPage /> : <Navigate to="/registr" replace />}
+      />
+
+      {/* 🔹 mock */}
       <Route
         path="/mock"
         element={isAuth ? <MockPage /> : <Navigate to="/registr" replace />}

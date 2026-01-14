@@ -113,14 +113,14 @@ const ReadingTest = () => {
                 ))}
               </div>
 
-              <div className="reading__test_bottom">
-                <Link to="/tests/reading/test">
+              <div className="reading__test-bottom">
+                <Link to="/tests/reading/start">
                   <button className="reading__button-1">
                     <img src="./arrow1.svg" alt="previous" />
                   </button>
                 </Link>
 
-                <Link to="/tests/reading/test" className="reading__btn2">
+                <Link to="/tests/reading/start" className="reading__btn2">
                   <button
                     className="reading__button-2"
                     disabled={!selectedAnswer}
@@ -129,7 +129,7 @@ const ReadingTest = () => {
                   </button>
                 </Link>
 
-                <Link to="/tests/reading/test">
+                <Link to="/tests/reading/start">
                   <button className="reading__button-3">
                     <img src="./arrow1.svg" alt="next" />
                   </button>
