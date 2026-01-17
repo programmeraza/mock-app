@@ -1,16 +1,18 @@
 import { useState } from "react";
 import MockStep from "../components/MockStep/MockStep";
+import ModalResult from "../components/ModalResult/ModalResult";
 
 const testOrder = ["Listening", "Reading", "Writing", "Speaking"];
 
 const MockPage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
   const handleNext = () => {
     if (currentIndex + 1 < testOrder.length) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      alert("All tests completed 🎉");
+      setShowModal(true);
     }
   };
 
@@ -32,12 +34,13 @@ const MockPage = () => {
             border: "none",
             borderRadius: "6px",
             cursor: "pointer",
-            alignSelf: "flex-end",
           }}
         >
           Next
         </button>
       </div>
+
+      <ModalResult open={showModal} />
     </>
   );
 };

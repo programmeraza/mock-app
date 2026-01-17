@@ -1,0 +1,66 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background: #fff;
+  padding: 2rem;
+  width: 420px;
+  border-radius: 14px;
+  text-align: center;
+  animation: scaleIn 0.3s ease;
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.submit {
+  background: #a175f0;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back {
+  background: #f1f1f1;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.loader {
+  font-weight: 500;
+  color: #a175f0;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
